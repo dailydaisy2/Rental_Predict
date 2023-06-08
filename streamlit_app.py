@@ -1,4 +1,3 @@
-pip install --upgrade pip
 pip install seaborn
 import seaborn as sns
 import pandas as pd

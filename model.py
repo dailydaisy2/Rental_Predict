@@ -1,10 +1,13 @@
+pip install --upgrade pip
+pip install seaborn
+import seaborn as sns
 import pandas as pd
 import numpy as np
-import seaborn as sns
 import scipy.stats
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split, KFold, cross_val_score
+import streamlit as st
 import pickle
 
 data = pd.read_csv('mudah-apartment-kl-selangor.csv')

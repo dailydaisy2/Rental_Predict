@@ -1,6 +1,8 @@
+pip install --upgrade pip
+pip install seaborn
+import seaborn as sns
 import pandas as pd
 import numpy as np
-import seaborn as sns
 import scipy.stats
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 from sklearn.ensemble import RandomForestRegressor

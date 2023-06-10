@@ -39,7 +39,7 @@ def main():
     if button:
         # make prediction
         result = predict(rooms, parking, size, property_type, furnished, region)
-        st.success(f'The estimate rental price is ${result}')
+        st.success(f'The estimate rental price is RM {result}')
         
 # load the train model
 with open('rf_model.pkl', 'rb') as rf:

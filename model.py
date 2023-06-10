@@ -74,7 +74,7 @@ scaler = stds.fit(x_train)
 rescaledx = scaler.transform(x_train)
 
 # selecting and fitting the model for training
-model = RandomForestRegressor()
+model = RandomForestRegressor(n_estimators = 500, criterion = "squared_error", max_features = "sqrt", random_state = 123)
 model.fit(rescaledx, y_train)
 # saving the trained mode
 pickle.dump(model, open('rf_model.pkl', 'wb'))

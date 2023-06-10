@@ -63,7 +63,7 @@ def predict(rooms, parking, size, property_type, furnished, region):
     
     # making predictions using the train model
     prediction = model.predict(df)
-    result = int(prediction)
+    result = int(prediction/5)
     return result
   
 if __name__ == '__main__':

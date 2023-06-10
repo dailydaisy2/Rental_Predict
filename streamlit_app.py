@@ -17,11 +17,11 @@ def main():
 
     # x, numeric = rooms, parking, size	
     rooms = left.number_input('Enter the number of rooms',
-                              min_value=1, max_value=10, step=1, format="%.1f", value=1)
+                              min_value=1, max_value=10, step=1, format="%d", value=1)
     parking = right.number_input('Enter the number of parking available',
-                                min_value=0, max_value=5, step=1, format="%.1f", value=1)
+                                min_value=0, max_value=5, step=1, format="%d", value=1)
     size = left.number_input('Enter the size of the whole property in sqft',
-                            min_value=1, max_value=10000, step=1, format="%.2f", value=100)
+                            min_value=1.0, max_value=10000.0, step=1.0, format="%f", value=850.0)
 
     # x, category = property_type, furnished, region
     property_type = st.selectbox('Select the type of your property',
